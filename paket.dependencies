@@ -4,3 +4,5 @@ storage: none
 framework: netcoreapp3.1, netstandard2.1
 nuget Newtonsoft.Json
 nuget FSharp.Core
+nuget Microsoft.Extensions.DependencyInjection.Abstractions
+nuget Microsoft.Extensions.Configuration.Binder

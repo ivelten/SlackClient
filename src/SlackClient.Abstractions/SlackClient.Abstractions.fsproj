@@ -6,8 +6,5 @@
   <ItemGroup>
     <Compile Include="Types.fs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SlackClient.Abstractions\SlackClient.Abstractions.fsproj" />
-  </ItemGroup>
   <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>
