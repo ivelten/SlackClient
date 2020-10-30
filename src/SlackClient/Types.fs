@@ -5,12 +5,15 @@ open System.Threading.Tasks
 open System.Collections.Specialized
 open Newtonsoft.Json
 open System.Net
+open Newtonsoft.Json.Serialization
 
 type SlackClient(urlAccessWithToken : string) =
     let uri = Uri(urlAccessWithToken)
+    let jsonContractResolver = DefaultContractResolver(NamingStrategy = CamelCaseNamingStrategy())
+    let jsonSettings = JsonSerializerSettings(NullValueHandling = NullValueHandling.Ignore, ContractResolver = jsonContractResolver)
 
     member __.PostMessageAsync(payload : Payload) : Task =
-        let payloadJson = JsonConvert.SerializeObject(payload)
+        let payloadJson = JsonConvert.SerializeObject(payload, jsonSettings)
         use client = new WebClient()
         let data = NameValueCollection()
         data.["payload"] <- payloadJson

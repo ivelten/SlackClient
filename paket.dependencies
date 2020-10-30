@@ -6,3 +6,10 @@ nuget Newtonsoft.Json
 nuget FSharp.Core
 nuget Microsoft.Extensions.DependencyInjection.Abstractions
 nuget Microsoft.Extensions.Configuration.Binder
+nuget NUnit
+nuget NUnit3TestAdapter
+nuget Microsoft.NET.Test.Sdk
+nuget Microsoft.Extensions.Configuration.EnvironmentVariables
+nuget Microsoft.Extensions.Configuration.Json
+nuget Microsoft.Extensions.DependencyInjection
+nuget FluentAssertions

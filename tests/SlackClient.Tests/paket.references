@@ -1,0 +1,7 @@
+NUnit
+NUnit3TestAdapter
+Microsoft.NET.Test.Sdk
+Microsoft.Extensions.DependencyInjection
+Microsoft.Extensions.Configuration.EnvironmentVariables
+Microsoft.Extensions.Configuration.Json
+FluentAssertions
